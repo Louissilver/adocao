@@ -13,8 +13,9 @@ function Menu() {
                 </Link>
             </div>
             <div>
-                <Button as={Link} to="/listagem">Quero adotar</Button>{' '}
-                <Button as={Link} to="/cadastro">Cadastrar um cãozinho</Button>{' '}
+                <Button as={Link} to="/">Home</Button>{' '}
+                <Button as={Link} to="/listagem/caes">Quero adotar</Button>{' '}
+                <Button as={Link} to="/cadastro/parceiro">Cadastre-se</Button>{' '}
             </div>
         </nav>
     );
