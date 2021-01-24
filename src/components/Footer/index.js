@@ -10,11 +10,12 @@ const FooterBase = styled.footer`
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
+  width:100%;
   a{
       color: white;
   }
   a:hover{
-      color: yellow;
+      color: #ffcb05;
   }
   @media (max-width: 800px) {
     margin-bottom: 50px;

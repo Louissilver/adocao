@@ -7,6 +7,8 @@ import Cao from './pages/cadastro/Cao';
 import Raca from './pages/cadastro/Raca';
 import ListaCao from './pages/listagem/Cao';
 import ListaRaca from './pages/listagem/Raca';
+import Adocao from './pages/listagem';
+import Cadastro from './pages/cadastro';
 import erro404 from './assets/erro404.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -41,6 +43,8 @@ ReactDOM.render(
       <Route path="/cadastro/raca" component={Raca} exact />
       <Route path="/listagem/racas" component={ListaRaca} exact />
       <Route path="/listagem/caes" component={ListaCao} exact />
+      <Route path="/listagem" component={Adocao} exact />
+      <Route path="/cadastro" component={Cadastro} exact />
       <Route component={Pagina404} />
     </Switch>
   </BrowserRouter>,

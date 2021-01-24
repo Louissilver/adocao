@@ -6,9 +6,7 @@ const Main = styled.main`
     background-color: white;
     color: black;
     flex: 1;
-    padding-left: 2%;
-    padding-right: 2%;
-    height: 73vh;
+    padding: 0;
 `;
 
 function PageDefault({ children }) {
