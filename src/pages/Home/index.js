@@ -2,6 +2,7 @@ import React from 'react';
 import PageDefault from '../../components/PageDefault';
 import styled from 'styled-components'
 import CachorroAdotado from '../../assets/cachorroadotado.png'
+import Button from '../../components/Button';
 
 const Article = styled.article`
     background-color: whitesmoke;
@@ -40,6 +41,7 @@ function Home() {
             <Article>
                 <h2>Por que adotar?</h2>
                 <p>Ao adotar...</p>
+                <Button>Conheça quem já foi adotado</Button>
             </Article>
             <Article>
                 <h2>Contato</h2>

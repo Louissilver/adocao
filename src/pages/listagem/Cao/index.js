@@ -31,7 +31,7 @@ function ListaCao() {
             <Row>
                 {dadosIniciais.map((cao, indice) => {
                     for (let i = 0; i < dadosIniciais.length; i += 1) {
-                        if (!(typeof dadosIniciais[indice] === 'undefined')) {
+                        if (!(typeof dadosIniciais[indice] === 'undefined') && (cao.adotado === false)) {
                             return (
                                 <Card style={{ width: '24rem', margin: '10px', background: 'whitesmoke' }}>
                                     <Card.Img
@@ -50,7 +50,6 @@ function ListaCao() {
                                         <ListGroup.Item style={{ background: 'whitesmoke' }}>Raça: {cao.raca}</ListGroup.Item>
                                         <ListGroup.Item style={{ background: 'whitesmoke' }}>Idade: {cao.idade} | Sexo: {cao.sexo} | Porte: {cao.porte}</ListGroup.Item>
                                         <ListGroup.Item style={{ background: 'whitesmoke' }}>Casinha: {cao.casinha}</ListGroup.Item>
-                                        <ListGroup.Item style={{ background: 'whitesmoke' }}>Adotado: {cao.adotado.toString()}</ListGroup.Item>
                                     </ListGroup>
                                     <Card.Body style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         <Button>Saiba mais</Button>
